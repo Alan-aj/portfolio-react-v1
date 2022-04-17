@@ -28,3 +28,4 @@ yarn-error.log*
 # npm install -D tailwindcss postcss autoprefixer
 # npx tailwindcss init -p
 # git push portfolio main
+# npm install react-icons
