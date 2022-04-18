@@ -21,7 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
+images
 # ``````````````````
 # Setup:
 # npx create-react-app ./
@@ -29,6 +29,8 @@ yarn-error.log*
 # npx tailwindcss init -p
 # npm install react-icons
 # npm install @splinetool/react-spline @splinetool/runtime
+# npm i react-vertical-timeline-component
+# npm install framer-motion
 # 
 # git push portfolio main
 # npm install (after update -> package.json)
