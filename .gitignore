@@ -29,3 +29,7 @@ yarn-error.log*
 # npx tailwindcss init -p
 # git push portfolio main
 # npm install react-icons
+# npm install @splinetool/react-spline @splinetool/runtime
+# 
+# npm install (after update -> package.json)
+# npm list
