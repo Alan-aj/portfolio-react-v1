@@ -1,7 +1,6 @@
 import { Spline } from "@splinetool/react-spline";
 import { useState } from "react";
 import { IoMenu, IoLogoGithub } from "react-icons/io5";
-import pic from "./images/about.jpg";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -15,12 +14,14 @@ function App() {
 
   return (
     <AnimatePresence initial={false}>
-      <div className="flex w-screen min-h-screen flex-col items-center justify-center relative bg-primary pb-20">
-        <nav className=" w-full px-6 z-50 fixed inset-x-0 top-5 flex justify-center items-center">
-          <div className=" w-full md:w-880 bg-navBar p-4 rounded-2xl flex items-center">
-            <p className=" text-lg text-slate-200 font-medium">Alan Joy</p>
+      <div className="flex w-screen min-h-screen flex-col items-center justify-center opacity-95 relative bg-primary ">
+        <nav className=" w-full px-6 z-50 fixed inset-x-0 top-5 flex justify-center items-center opacity-95">
+          <div className=" w-full md:w-880 bg-navBar p-4 rounded-2xl flex items-center opacity-95">
+            <p className=" text-lg text-slate-200 font-semibold px-2 md:px-3">
+              Alan Joy
+            </p>
 
-            <div className=" hidden md:flex items-center gap-6 ml-6 flex-1">
+            <div className=" hidden md:flex items-center gap-6 ml-8 flex-1">
               <a
                 href="#home"
                 className=" text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out"
@@ -62,9 +63,9 @@ function App() {
 
             {isActive && (
               <motion.div
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1.1 }}
-                exit={{ opacity: 0, scale: 0.5 }}
+                initial={{ scale: 0.5 }}
+                animate={{ scale: 1.1 }}
+                exit={{ scale: 0.5 }}
                 className=" p-4 py-5 w-190 bg-navBar rounded-lg fixed top-28 right-7 flex flex-col items-center justify-evenly gap-6"
               >
                 <a
@@ -109,10 +110,10 @@ function App() {
 
         <div className="relative" id="home">
           {/* splime 3d */}
-          <Spline scene="https://draft.spline.design/E5Dq8AfKIQap7pF6/scene.spline" />
+          <Spline scene="https://draft.spline.design/rFfzneOfimaYwbUk/scene.spline" />
 
-          <div className=" absolute bottom-10 w-full justify-center items-center flex">
-            <div className=" shadow-md p-3 flex items-center justify-center bg-zinc-900 rounded-3xl">
+          <div className=" absolute bottom-10 w-full justify-center items-center flex ">
+            <div className=" shadow-md p-3 flex items-center justify-center bg-zinc-900 rounded-3xl opacity-80">
               <p className=" text-textBase">Press and drag to orbit</p>
             </div>
           </div>
@@ -123,22 +124,22 @@ function App() {
         <main className="w-[80%] mt-5">
           {/* About section */}
           <section
-            className=" w-full grid grid-cols-1 md:grid-cols-2 gap-4 my-24"
+            className=" h-screen relative md:px-48 items-center justify-center gap-4 my-24"
             id="about"
           >
             {/* image box */}
-            <div className=" w-full h-420 flex items-center justify-center">
-              <div className=" w-275 h-340 bg-emerald-200 rounded-md relative">
+            {/* <div className=" w-full h-420 flex items-center justify-center">
+              <div className=" w-275 h-340 bg-emerald-200 rounded-md relative"> */}
                 {/* image */}
-                <img
+                {/* <img
                   className=" w-full h-full absolute -right-4 top-4 object-cover rounded-lg shadow-lg"
                   src={pic}
                   alt=""
                 />
               </div>
-            </div>
+            </div> */}
             {/* content box */}
-            <div className=" w-full h-420 flex flex-col items-center justify-center">
+            {/* <div className=" w-full h-420 flex flex-col items-center justify-center">
               <p className=" text-lg text-textBase text-center">
                 liedse sflewr sd fwerljsf sdfl erhlsdfj wellsdf wehl liedse
                 sflewr sd fwerljsf sdfl erhlsdfj wellsdf wehl liedse sflewr sd
@@ -147,19 +148,20 @@ function App() {
                 erhlsdfj wellsdf wehl liedse sflewr sd fwerljsf sdfl erhlsdfj
                 wellsdf wehl liedse sflewr sd fwerljsf sdfl erhlsdfj wellsdf
                 wehl liedse sflewr sd fwerljsf sdfl erhlsdfj wellsdf wehl
+                
               </p>
               <motion.button
                 whileTap={{ scale: 0.8 }}
-                class="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg hover:dark:shadow-teal-800/80"
+                class="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600  dark:text-white "
               >
                 <span class="w-full md:w-auto relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                  Download
+                  My Portfolio
                 </span>
               </motion.button>
-            </div>
+            </div> */}
           </section>
           {/* timeLine */}
-          <section className=" w-full flex items-center justify-center">
+          <section className=" w-full flex items-center justify-center overflow-hidden">
             <VerticalTimeline>
               {Experience &&
                 Experience.map((n) => (
@@ -191,14 +193,14 @@ function App() {
 
           {/* projects */}
           <section
-            className=" flex flex-wrap items-center justify-evenly my-24 gap-4"
+            className=" flex flex-wrap items-center justify-center my-24 gap-4"
             id="projects"
           >
             {Projects &&
               Projects.map((n) => (
                 <div
                   key={n.id}
-                  className=" border border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out"
+                  className=" border border-zinc-800 rounded-md md:mx-1 p-2 px-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out"
                 >
                   <p className=" text-mg text-textBase font-medium uppercase">
                     {n.name.length > 25 ? `${n.name.slice(0, 25)}...` : n.name}
@@ -206,7 +208,7 @@ function App() {
                   <img
                     src={n.imageSrc}
                     alt=""
-                    className=" w-full h-full object-cover rounded-md my-4"
+                    className=" w-full h-full object-cover rounded-md my-2 mb-3"
                   />
                   <div className=" flex flex-1 items-center justify-between">
                     <p className="text-lg text-gray-300">
@@ -237,7 +239,7 @@ function App() {
                     whileTap={{ scale: 0.8 }}
                     key={n.id}
                     href={n.link}
-                    className=" w-full md:w-auto px-3 md:px-8 py-5 border border-zinc-800 rounded-2xl hover:border-zinc-600 duration-100 ease-in-out cursor-pointer flex items-center justify-center gap-3"
+                    className=" w-4/5 md:w-auto px-3 md:px-8 py-3 border border-zinc-800 rounded-2xl hover:border-zinc-600 duration-100 ease-in-out cursor-pointer flex items-center justify-center gap-3"
                   >
                     {n.iconSrc}
                     <p className=" text-lg text-textBase">{n.name}</p>
@@ -246,6 +248,17 @@ function App() {
             </div>
           </section>
         </main>
+        <div className="w-full bg-black p-5 items-center opacity-60">
+          <footer className=" py-0">
+            <div className=" w-full text-center text-sm text-textBase">
+              <span>© 2022 </span>
+              <a className=" font-semibold" href="#home">
+                Alan Joy.
+              </a>
+              <span> All Rights Reserved.</span>
+            </div>
+          </footer>
+        </div>
       </div>
     </AnimatePresence>
   );

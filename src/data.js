@@ -1,103 +1,105 @@
 import {
-  IoCodeWorking,
   IoLogoGithub,
   IoLogoYoutube,
-  IoLogoTwitter,
   IoLogoLinkedin,
-  IoLogoWhatsapp,
+  IoRocket,
+  IoColorPaletteSharp,
+  IoEaselSharp,
+  IoEarth,
+  IoSchool
 } from "react-icons/io5";
 import img1 from "./images/img1.png"
 
 export const Experience = [
   {
     id: 1,
-    date: "2016 - present",
-    iconsSrc: <IoCodeWorking />,
-    title: "Creative Director",
-    location: "Doha, Qatar",
+    date: "2000",
+    iconsSrc: <IoRocket />,
+    title: "Start my Journey",
+    location: "",
     description:
-      "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+      "Born in Kerala, India",
   },
   {
     id: 2,
-    date: "2014 - 2016",
-    iconsSrc: <IoCodeWorking />,
-    title: "Creative Director",
-    location: "Doha, Qatar",
+    date: "2016 - 2017",
+    iconsSrc: <IoColorPaletteSharp />,
+    title: "School",
+    location: "Holy Cross Convent School",
     description:
-      "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+      "Completed my 10th",
   },
   {
     id: 3,
-    date: "2012 - 2014",
-    iconsSrc: <IoCodeWorking />,
-    title: "Creative Director",
-    location: "Doha, Qatar",
+    date: "2017 - 2019",
+    iconsSrc: <IoEaselSharp />,
+    title: "Higher Secondary",
+    location: "Subulussalam Higher Secondary School",
     description:
-      "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+      "Completed my Plus Two",
   },
   {
     id: 4,
-    date: "2011 - 2012",
-    iconsSrc: <IoCodeWorking />,
-    title: "Creative Director",
-    location: "Doha, Qatar",
+    date: "2019 - 2022",
+    iconsSrc: <IoSchool />,
+    title: "College",
+    location: "St. Joseph's College Devadiri, Kozhikode",
     description:
-      "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+      "Completed my Bsc Computer Science degree from Calicut University",
   },
   {
     id: 5,
-    date: "2010 - 2011",
-    iconsSrc: <IoCodeWorking />,
-    title: "Creative Director",
-    location: "Doha, Qatar",
+    date: "2022 - Present",
+    iconsSrc: <IoEarth />,
+    title: "Loading..",
+    location: "",
     description:
-      "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+      "😉",
   },
 ];
 
 export const Projects = [
   {
     id: 1,
-    name: "Food Delivery UI Mockup",
+    name: "Full Stack Music Player App ",
     imageSrc: img1,
-    techs: "React Js, Redux, Material UI",
-    github: "#",
+    techs: "Django, React, Spotify API, Heroku",
+    github: "https://github.com/Alan-aj/django-react-spotify",
   },
   {
     id: 2,
-    name: "Full Stack Social Media App ",
+    name: "Modern Todo App",
     imageSrc: img1,
-    techs: "React Js, Sanity, Tailwind CSS",
-    github: "#",
+    techs: "React, React Hooks, Javascript",
+    github: "https://github.com/Alan-aj/react_todo_app",
   },
   {
     id: 3,
-    name: "Travel Advisor",
+    name: "Cryptocurrency App",
     imageSrc: img1,
-    techs: "React Js, Chakra UI, Google API",
-    github: "#",
+    techs: "React, Javascript, CSS, Netlify",
+    github: "https://github.com/Alan-aj/crypto-price-app",
   },
   {
     id: 4,
-    name: "Pintrest UI Clone 2.0 ",
+    name: "Web Calculator App",
     imageSrc: img1,
-    techs: "React Js,  Material UI",
-    github: "#",
+    techs: "React, HTML, CSS, Netlify",
+    github: "https://github.com/Alan-aj/react_calculator",
   },
   {
     id: 5,
-    name: "Own Video Blog",
+    name: "My Blog Website",
     imageSrc: img1,
-    techs: "React Js, Chara UI, Firebase",
+    techs: "Blogger, Javascript, HTML, CSS",
     github: "#",
   },
   {
     id: 6,
-    name: "Whatsapp UI Clone",
+    name: "Weather App",
     imageSrc: img1,
-    techs: "NextJs, Firebase Auth",
-    github: "#",
+    techs: "React, Weather API, Tailwind CSS",
+    github: "https://github.com/Alan-aj/react_weather_app",
   },
 ];
 
@@ -106,21 +108,7 @@ export const SocialLinks = [
     id: 1,
     iconSrc: <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />,
     name: "GitHub",
-    link: "#",
-  },
-  {
-    id: 2,
-    iconSrc: <IoLogoYoutube className="text-red-500 text-3xl cursor-pointer" />,
-    name: "YouTube",
-    link: "#",
-  },
-  {
-    id: 3,
-    iconSrc: (
-      <IoLogoTwitter className="text-blue-500 text-3xl cursor-pointer" />
-    ),
-    name: "Twitter",
-    link: "#",
+    link: "https://github.com/Alan-aj",
   },
   {
     id: 4,
@@ -128,14 +116,12 @@ export const SocialLinks = [
       <IoLogoLinkedin className="text-blue-800 text-3xl cursor-pointer" />
     ),
     name: "LinkedIn",
-    link: "#",
+    link: "https://www.linkedin.com/in/alan-aj",
   },
   {
-    id: 5,
-    iconSrc: (
-      <IoLogoWhatsapp className="text-green-500 text-3xl cursor-pointer" />
-    ),
-    name: "Whatsapp",
+    id: 2,
+    iconSrc: <IoLogoYoutube className="text-red-500 text-3xl cursor-pointer" />,
+    name: "YouTube",
     link: "#",
   },
 ];
