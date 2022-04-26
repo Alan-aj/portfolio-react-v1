@@ -119,47 +119,42 @@ function App() {
           </div>
         </div>
 
-        {/* Main section */}
-
-        <main className="w-[80%] mt-5">
-          {/* About section */}
-          <section
-            className=" h-screen relative md:px-48 items-center justify-center gap-4 my-24"
+        {/* About section */}
+        <section className="w-[100%] mt-5">
+          <div
+            className=" h-screen w- relative my-10 overflow-hidden"
             id="about"
           >
-            {/* image box */}
-            {/* <div className=" w-full h-420 flex items-center justify-center">
-              <div className=" w-275 h-340 bg-emerald-200 rounded-md relative"> */}
-                {/* image */}
-                {/* <img
-                  className=" w-full h-full absolute -right-4 top-4 object-cover rounded-lg shadow-lg"
-                  src={pic}
-                  alt=""
-                />
-              </div>
-            </div> */}
-            {/* content box */}
-            {/* <div className=" w-full h-420 flex flex-col items-center justify-center">
-              <p className=" text-lg text-textBase text-center">
+            <div className=" absolute w-96 h-96 backdrop-blur-sm bg-teal-100/30 rounded-full z-0 top-1/2 right-1/2"></div>
+            <div className=" absolute w-72 h-72 backdrop-blur-sm bg-purple-300/30 rounded-full z-0 bottom-1/2 left-1/2"></div>
+            <div className=" absolute w-16 h-16 backdrop-blur-sm bg-orange-200/30 rounded-full z-0 inset-y-2/4 inset-x-2/4"></div>
+
+            <div className="absolute w-full h-screen backdrop-blur-sm"></div>
+            <div className="w-10/12 md:w-3/6 2xl:w-2/6 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 backdrop-blur-xl bg-white/30 rounded-lg md:p-10 p-10">
+              <h1 className=" text-white font-semibold text-3xl mb-2">
+                Hello there..
+              </h1>
+              <p className="text-white text-xl mb-3 text-justify">
                 liedse sflewr sd fwerljsf sdfl erhlsdfj wellsdf wehl liedse
                 sflewr sd fwerljsf sdfl erhlsdfj wellsdf wehl liedse sflewr sd
                 fwerljsf sdfl erhlsdfj wellsdf wehl liedse sflewr sd fwerljsf
-                sdfl erhlsdfj wellsdf wehl liedse sflewr sd fwerljsf sdfl
-                erhlsdfj wellsdf wehl liedse sflewr sd fwerljsf sdfl erhlsdfj
-                wellsdf wehl liedse sflewr sd fwerljsf sdfl erhlsdfj wellsdf
-                wehl liedse sflewr sd fwerljsf sdfl erhlsdfj wellsdf wehl
-                
+                sdfl erhlsdfj wellsdf
               </p>
               <motion.button
                 whileTap={{ scale: 0.8 }}
-                class="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600  dark:text-white "
+                className="w-full md:w-auto relative mt-4 inline-flex items-center justify-center p-0.5 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group   dark:text-white "
               >
-                <span class="w-full md:w-auto relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                <span className="w-full md:w-auto relative px-5 py-2.5 transition-all ease-in duration-75  dark:bg-gray-900/30 rounded-md ">
                   My Portfolio
                 </span>
               </motion.button>
-            </div> */}
-          </section>
+            </div>
+          </div>
+        </section>
+
+        {/* Main section */}
+        <main className="w-[80%] mt-5">
+         
           {/* timeLine */}
           <section className=" w-full flex items-center justify-center overflow-hidden">
             <VerticalTimeline>

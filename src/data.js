@@ -1,12 +1,12 @@
 import {
   IoLogoGithub,
-  IoLogoYoutube,
   IoLogoLinkedin,
   IoRocket,
   IoColorPaletteSharp,
-  IoEaselSharp,
+  IoPlanet,
   IoEarth,
-  IoSchool
+  IoSchool,
+  IoBook
 } from "react-icons/io5";
 import img1 from "./images/img1.png"
 
@@ -32,7 +32,7 @@ export const Experience = [
   {
     id: 3,
     date: "2017 - 2019",
-    iconsSrc: <IoEaselSharp />,
+    iconsSrc: <IoPlanet />,
     title: "Higher Secondary",
     location: "Subulussalam Higher Secondary School",
     description:
@@ -61,7 +61,7 @@ export const Experience = [
 export const Projects = [
   {
     id: 1,
-    name: "Full Stack Music Player App ",
+    name: "Music Player App ",
     imageSrc: img1,
     techs: "Django, React, Spotify API, Heroku",
     github: "https://github.com/Alan-aj/django-react-spotify",
@@ -89,10 +89,10 @@ export const Projects = [
   },
   {
     id: 5,
-    name: "My Blog Website",
+    name: "Snake Game",
     imageSrc: img1,
-    techs: "Blogger, Javascript, HTML, CSS",
-    github: "#",
+    techs: "Javascript, HTML, CSS",
+    github: "https://github.com/Alan-aj/snake_game_js",
   },
   {
     id: 6,
@@ -111,7 +111,7 @@ export const SocialLinks = [
     link: "https://github.com/Alan-aj",
   },
   {
-    id: 4,
+    id: 2,
     iconSrc: (
       <IoLogoLinkedin className="text-blue-800 text-3xl cursor-pointer" />
     ),
@@ -119,9 +119,9 @@ export const SocialLinks = [
     link: "https://www.linkedin.com/in/alan-aj",
   },
   {
-    id: 2,
-    iconSrc: <IoLogoYoutube className="text-red-500 text-3xl cursor-pointer" />,
-    name: "YouTube",
-    link: "#",
+    id: 3,
+    iconSrc: <IoBook className="text-amber-500 text-3xl cursor-pointer" />,
+    name: "My Blog",
+    link: "https://alanban.blogspot.com",
   },
 ];
