@@ -1,20 +1,20 @@
-# Portfolio website using Reactjs, Framer motions and Tailwind CSS
+# Portfolio website using Reactjs
 
 My personal portfolio website using Reactjs with Tailwind CSS, Spline 3D deigns and Framer motions for animations.
-### `Live site` : [Pro-Calculator](https://alan-aj.netlify.app)
 
+### `Live site` : [Pro-Calculator](https://alan-aj.netlify.app)
 
 ## Technologies
 ```
-* ReactJs
-* Tailwind CSS
-* Framer motions
-* Spline 3D
+◻ ReactJs
+◻ Tailwind CSS
+◻ Framer motions
+◻ Spline 3D
 ```
 ## Tools
 ```
-* VS code
-* Chrome
-* Git
-* Netlify
+◻ VS code
+◻ Chrome
+◻ Git
+◻ Netlify
 ```
