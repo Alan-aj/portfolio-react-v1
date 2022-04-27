@@ -3,7 +3,7 @@
 My personal portfolio website using Reactjs with Tailwind CSS, Spline 3D deigns and Framer motions for animations.
 
 `Live site` : [Alan-aj](https://alan-aj.netlify.app)
-
+#
 ### `Technologies`
 ```
 ◻ ReactJs
