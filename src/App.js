@@ -47,10 +47,13 @@ function App() {
                 Contact
               </a>
               <a
-                href="#home"
+                href="https://github.com/Alan-aj/portfolio-react-v1"
+                target="_blank"
+                rel="noreferrer"
                 className=" ml-auto text-base text-textBase font-medium  hover:text-slate-100 cursor-pointer border border-textBase px-2 py-1 rounded-xl hover:border-gray-100 duration-100 ease-in-out"
               >
-                Download
+                <IoLogoGithub className=" inline mr-2 mb-1" />
+                Source
               </a>
             </div>
             <motion.div
@@ -97,11 +100,14 @@ function App() {
                   Contact
                 </a>
                 <a
-                  href="https://portfolio30-7d4fd.web.app/"
+                  href="https://github.com/Alan-aj/portfolio-react-v1"
+                  target="_blank"
+                  rel="noreferrer"
                   className=" text-base text-textBase font-medium  hover:text-slate-100 cursor-pointer border border-textBase px-2 py-1 rounded-xl hover:border-gray-100 duration-100 ease-in-out"
                   onClick={() => setIsActive(false)}
                 >
-                  Download
+                  <IoLogoGithub className=" inline mr-2 mb-1" />
+                  Source
                 </a>
               </motion.div>
             )}
@@ -110,9 +116,9 @@ function App() {
 
         <div className="relative" id="home">
           {/* splime 3d */}
-          <Spline scene="https://draft.spline.design/rFfzneOfimaYwbUk/scene.spline" />
+          <Spline scene="https://prod.spline.design/jNKv5TnRLrJnBjyT/scene.spline" />
 
-          <div className=" absolute bottom-10 w-full justify-center items-center flex ">
+          <div className=" absolute bottom-5 w-full justify-center items-center flex ">
             <div className=" shadow-md p-3 flex items-center justify-center bg-zinc-900 rounded-3xl opacity-80">
               <p className=" text-textBase">Press and drag to orbit</p>
             </div>
@@ -120,7 +126,7 @@ function App() {
         </div>
 
         {/* About section */}
-        <section className="w-[100%] mt-5">
+        <section className="w-[100%] mt-0">
           <div
             className=" h-screen w- relative my-10 overflow-hidden"
             id="about"
@@ -132,13 +138,12 @@ function App() {
             <div className="absolute w-full h-screen backdrop-blur-sm"></div>
             <div className="w-10/12 md:w-3/6 2xl:w-2/6 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 backdrop-blur-xl bg-white/30 rounded-lg md:p-10 p-10">
               <h1 className=" text-white font-semibold text-3xl mb-2">
-                Hello there..
+                Hello..
               </h1>
-              <p className="text-white text-xl mb-3 text-justify">
-                liedse sflewr sd fwerljsf sdfl erhlsdfj wellsdf wehl liedse
-                sflewr sd fwerljsf sdfl erhlsdfj wellsdf wehl liedse sflewr sd
-                fwerljsf sdfl erhlsdfj wellsdf wehl liedse sflewr sd fwerljsf
-                sdfl erhlsdfj wellsdf
+              <p className="text-white text-xl mb-3 text-left">
+                I'm Alan Joy. I am a student, undergraduate, developer and
+                life-long learner. I love to play with code and explore new
+                things. Scroll down to view more...🚀
               </p>
               <motion.button
                 whileTap={{ scale: 0.8 }}
@@ -154,7 +159,6 @@ function App() {
 
         {/* Main section */}
         <main className="w-[80%] mt-5">
-         
           {/* timeLine */}
           <section className=" w-full flex items-center justify-center overflow-hidden">
             <VerticalTimeline>
@@ -200,11 +204,13 @@ function App() {
                   <p className=" text-mg text-textBase font-medium uppercase">
                     {n.name.length > 25 ? `${n.name.slice(0, 25)}...` : n.name}
                   </p>
-                  <img
-                    src={n.imageSrc}
-                    alt=""
-                    className=" w-full h-full object-cover rounded-md my-2 mb-3"
-                  />
+                  <a href={n.link} target="_blank" rel="noreferrer">
+                    <img
+                      src={n.imageSrc}
+                      alt=""
+                      className=" w-full h-full object-cover rounded-md my-2 mb-3"
+                    />
+                  </a>
                   <div className=" flex flex-1 items-center justify-between">
                     <p className="text-lg text-gray-300">
                       Technologies
@@ -234,6 +240,8 @@ function App() {
                     whileTap={{ scale: 0.8 }}
                     key={n.id}
                     href={n.link}
+                    target="_blank"
+                    rel="noreferrer"
                     className=" w-4/5 md:w-auto px-3 md:px-8 py-3 border border-zinc-800 rounded-2xl hover:border-zinc-600 duration-100 ease-in-out cursor-pointer flex items-center justify-center gap-3"
                   >
                     {n.iconSrc}

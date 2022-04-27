@@ -6,9 +6,15 @@ import {
   IoPlanet,
   IoEarth,
   IoSchool,
-  IoBook
+  IoBook,
 } from "react-icons/io5";
-import img1 from "./images/img1.png"
+import img1 from "./images/img1.png";
+import img2 from "./images/img2.png";
+import img3 from "./images/img3.png";
+import img4 from "./images/img4.png";
+import img5 from "./images/img5.png";
+import img6 from "./images/img6.png";
+import img7 from "./images/img7.png";
 
 export const Experience = [
   {
@@ -17,8 +23,7 @@ export const Experience = [
     iconsSrc: <IoRocket />,
     title: "Start my Journey",
     location: "",
-    description:
-      "Born in Kerala, India",
+    description: "Born in Kerala, India",
   },
   {
     id: 2,
@@ -26,8 +31,7 @@ export const Experience = [
     iconsSrc: <IoColorPaletteSharp />,
     title: "School",
     location: "Holy Cross Convent School",
-    description:
-      "Completed my 10th",
+    description: "Completed my 10th",
   },
   {
     id: 3,
@@ -35,8 +39,7 @@ export const Experience = [
     iconsSrc: <IoPlanet />,
     title: "Higher Secondary",
     location: "Subulussalam Higher Secondary School",
-    description:
-      "Completed my Plus Two",
+    description: "Completed my Plus Two",
   },
   {
     id: 4,
@@ -53,53 +56,66 @@ export const Experience = [
     iconsSrc: <IoEarth />,
     title: "Loading..",
     location: "",
-    description:
-      "😉",
+    description: "😉",
   },
 ];
 
 export const Projects = [
   {
     id: 1,
-    name: "Music Player App ",
+    name: "Live Chat App",
     imageSrc: img1,
-    techs: "Django, React, Spotify API, Heroku",
-    github: "https://github.com/Alan-aj/django-react-spotify",
+    techs: "React, NodeJs, Socket.io, Heroku",
+    github: "https://github.com/Alan-aj/chat-app",
+    link: "https://chat-joy.netlify.app/",
   },
   {
     id: 2,
-    name: "Modern Todo App",
-    imageSrc: img1,
-    techs: "React, React Hooks, Javascript",
-    github: "https://github.com/Alan-aj/react_todo_app",
+    name: "Music Player App ",
+    imageSrc: img2,
+    techs: "Django, React, Spotify API, Heroku",
+    github: "https://github.com/Alan-aj/django-react-spotify",
+    link: "",
   },
   {
     id: 3,
-    name: "Cryptocurrency App",
-    imageSrc: img1,
-    techs: "React, Javascript, CSS, Netlify",
-    github: "https://github.com/Alan-aj/crypto-price-app",
+    name: "Modern Todo App",
+    imageSrc: img3,
+    techs: "React, React Hooks, Javascript",
+    github: "https://github.com/Alan-aj/react_todo_app",
+    link: "https://todo-zone.netlify.app/",
   },
   {
     id: 4,
     name: "Web Calculator App",
-    imageSrc: img1,
+    imageSrc: img4,
     techs: "React, HTML, CSS, Netlify",
     github: "https://github.com/Alan-aj/react_calculator",
+    link: "https://pro-calculator.netlify.app/",
   },
   {
     id: 5,
     name: "Snake Game",
-    imageSrc: img1,
+    imageSrc: img5,
     techs: "Javascript, HTML, CSS",
     github: "https://github.com/Alan-aj/snake_game_js",
+    link: "https://snake-aj.netlify.app/",
   },
   {
     id: 6,
     name: "Weather App",
-    imageSrc: img1,
+    imageSrc: img6,
     techs: "React, Weather API, Tailwind CSS",
     github: "https://github.com/Alan-aj/react_weather_app",
+    link: "https://speed-weather.netlify.app/",
+  },
+  {
+    id: 7,
+    name: "Cryptocurrency App",
+    imageSrc: img7,
+    techs: "React, Javascript, CSS, Netlify",
+    github: "https://github.com/Alan-aj/crypto-price-app",
+    link: "https://crypto-online.netlify.app/",
   },
 ];
 
@@ -120,7 +136,7 @@ export const SocialLinks = [
   },
   {
     id: 3,
-    iconSrc: <IoBook className="text-amber-500 text-3xl cursor-pointer" />,
+    iconSrc: <IoBook className="text-orange-500 text-3xl cursor-pointer" />,
     name: "My Blog",
     link: "https://alanban.blogspot.com",
   },
