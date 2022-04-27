@@ -4,14 +4,14 @@ My personal portfolio website using Reactjs with Tailwind CSS, Spline 3D deigns 
 
 ### `Live site` : [Alan-aj](https://alan-aj.netlify.app)
 
-## Technologies
+## `Technologies`
 ```
 ◻ ReactJs
 ◻ Tailwind CSS
 ◻ Framer motions
 ◻ Spline 3D
 ```
-## Tools
+## `Tools`
 ```
 ◻ VS code
 ◻ Chrome
