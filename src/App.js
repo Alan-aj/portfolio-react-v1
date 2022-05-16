@@ -145,14 +145,7 @@ function App() {
                 life-long learner. I love to play with code and explore new
                 things. Scroll down to view more...🚀
               </p>
-              <motion.button
-                whileTap={{ scale: 0.8 }}
-                className="w-full md:w-auto relative mt-4 inline-flex items-center justify-center p-0.5 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group   dark:text-white "
-              >
-                <span className="w-full md:w-auto relative px-5 py-2.5 transition-all ease-in duration-75  dark:bg-gray-900/30 rounded-md ">
-                  My Portfolio
-                </span>
-              </motion.button>
+
             </div>
           </div>
         </section>

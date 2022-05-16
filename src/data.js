@@ -75,7 +75,7 @@ export const Projects = [
     imageSrc: img2,
     techs: "Django, React, Spotify API, Heroku",
     github: "https://github.com/Alan-aj/django-react-spotify",
-    link: "",
+    link: "https://aj-music.herokuapp.com",
   },
   {
     id: 3,
