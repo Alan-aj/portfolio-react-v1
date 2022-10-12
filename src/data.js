@@ -15,6 +15,7 @@ import img4 from "./images/img4.png";
 import img5 from "./images/img5.png";
 import img6 from "./images/img6.png";
 import img7 from "./images/img7.png";
+import img8 from "./images/img8.png";
 
 export const Experience = [
   {
@@ -116,6 +117,14 @@ export const Projects = [
     techs: "React, Javascript, CSS, Netlify",
     github: "https://github.com/Alan-aj/crypto-price-app",
     link: "https://crypto-online.netlify.app/",
+  },
+  {
+    id: 8,
+    name: "Inventory System",
+    imageSrc: img8,
+    techs: "React, NodeJs, Express, MongoDb",
+    github: "https://github.com/Alan-aj/node_crud_inventory",
+    link: "https://github.com/Alan-aj/node_crud_inventory",
   },
 ];
 
